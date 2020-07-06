@@ -10,7 +10,7 @@ form {
 }
 
 .info {
-  color: grey;
+  color: red;
   font-size: 90%;
   padding-top: 20px;
   padding-bottom: 40px;
@@ -26,4 +26,34 @@ form {
 
   padding: 10px;
   margin-bottom: 2em;
+}
+
+.photos {
+  background-color: whitesmoke;
+  padding: 10px;
+  align-self: center;
+  min-width: 30%;
+  min-height: 100px;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: lightgrey;
+}
+
+#startbutton {
+  background-color: whitesmoke !important;
+  color: grey;
+  height: 30px !important;
+  line-height: 0;
+}
+
+.imageSubText > button {
+  text-decoration: underline;
+  background-color: whitesmoke;
+  border-width: 0px;
+  font-size: 80%;
+  color: darkgoldenrod;
+  height: 20px;
+  margin-top: 0;
+  line-height: 0;
+  align-self: flex-end;
 }
