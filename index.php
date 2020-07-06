@@ -180,7 +180,6 @@
 
                     document.getElementById("photosData").value = document.getElementById("photosData").value  + "<#>" + data;
                     
-                    // const photos = document.getElementById('photos');  
                     const photoDyn = document.createElement('img'); 
                     photoDyn.src = data;
                     photoDyn.id = getUniqueId();
