@@ -95,7 +95,7 @@
     </div>
 
     <script>
-        var width = 320; 
+        var width = 640; 
         var height = 0; 
 
         var video = null;
@@ -128,7 +128,10 @@
 
             clearphoto();
 
-            navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+            navigator.mediaDevices.getUserMedia({ 
+                video: {
+                    width: {exact: 640}, height: {exact: 480}, facingMode: 'environment'
+                }, audio: false})
             .then(function(stream) {
                 video.srcObject = stream;
                 video.play();
