@@ -10,12 +10,23 @@ It uses -
 
 ## Installation Instructions
 
-This is a fairly self-contained app.
+Prerequisite Setup -
+
+1. You need a program to host PHP files. I recommend Laragon
+1. Enable `extension=pdo_sqlite` and `extension=sqlite3` in `php.ini`
+1. Use a domain that can have SSL (PWA needs SSL). Use self-certificate with a solution like Laragon that automatically enables SSL for test sites
+
+Deploy app on your server. This is a fairly self-contained app and doesn't expect much from you.
 
 1. Download repository
-1. Host the entire folder. Ensure `images` folder is write-enabled
-1. Enable `https` for your site. You can use self-certification on a tool like Laragon
-1. Navigate to your domain name and test
+1. Drop this repo folder in WWW. This is a test / demo solution
+1. Ensure `images` and `data` folders are write-enabled
+1. You should now be able to access your domain e.g. https://demo-php-pwa.test/
+
+Use it!
+
+- Upload files from your browser by providing the claim number and at least one image. The browser will allow the online app access to camera (even without PWA)
+- PWA enables you to install the app on phone - either directly from browser or we can package it for Playstore. The latter will allow users to install app, and work as they would on the web.
 
 ## How it works?
 
